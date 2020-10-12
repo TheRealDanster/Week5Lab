@@ -21,13 +21,12 @@ public class LoginServlet extends HttpServlet {
 	}
 	
 	if (session.getAttribute("username") != null) {
-//	    getServletContext().getRequestDispatcher("/WEB-INF/home.jsp").forward(request, response);
 	    response.sendRedirect("home");
 	} else {
 	    getServletContext().getRequestDispatcher("/WEB-INF/login.jsp").forward(request, response);
 	}
     }
-
+    
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
