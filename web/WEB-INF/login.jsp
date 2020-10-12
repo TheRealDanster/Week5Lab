@@ -17,6 +17,8 @@
             Username: <input type="string" name="username"></br>
             Password: <input type="string" name="password"></br>
             <input type="submit" value="login">
+            </br></br>
+            <p>${message}</p>
         </form>
     </body>
 </html>

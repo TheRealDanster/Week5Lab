@@ -7,7 +7,7 @@ package models;
 public class AccountService {
     
     public User login(String username, String password) {
-	if (username.equals("abe") || username.equals("barb") && password.equals("password")) {
+	if (password.equals("password") && username.equals("abe") || username.equals("barb")) {
 	    User user = new User();
 	    user.setUsername(username);
 	    user.setPassword(null);
